@@ -1,0 +1,15 @@
+# clasp
+.clasp.json
+
+# Node modules (claspを使用する場合)
+node_modules/
+
+# 環境変数
+.env
+
+# ログファイル
+*.log
+
+# OS固有ファイル
+.DS_Store
+Thumbs.db

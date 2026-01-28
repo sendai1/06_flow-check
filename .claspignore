@@ -1,0 +1,4 @@
+# claspでアップロードしないファイル
+**/**
+!src/**
+!appsscript.json
