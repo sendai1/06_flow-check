@@ -349,6 +349,21 @@ function createStepDetailSection(form, stepNumber) {
   const reference = form.addTextItem();
   reference.setTitle('参照情報');
   
+  // 画像添付（3枚）
+  // 注意：Google Apps Script APIではファイルアップロード項目を直接追加できません
+  // フォームの編集画面で手動でファイルアップロード項目を追加するか、Googleドライブの共有リンクを使用してください
+  const image1 = form.addTextItem();
+  image1.setTitle('画像①（Googleドライブの共有リンク）')
+    .setHelpText('このステップに関連する画像をGoogleドライブにアップロードし、共有リンクを貼り付けてください。画像を右クリック→「共有」→「リンクを取得」でURLをコピーできます。');
+  
+  const image2 = form.addTextItem();
+  image2.setTitle('画像②（Googleドライブの共有リンク）')
+    .setHelpText('このステップに関連する画像をGoogleドライブにアップロードし、共有リンクを貼り付けてください。');
+  
+  const image3 = form.addTextItem();
+  image3.setTitle('画像③（Googleドライブの共有リンク）')
+    .setHelpText('このステップに関連する画像をGoogleドライブにアップロードし、共有リンクを貼り付けてください。');
+  
   // 注意点・ナレッジ
   const notes = form.addParagraphTextItem();
   notes.setTitle('この工程の注意点');
